@@ -1,5 +1,10 @@
 #!/usr/bin/env python
-#TODO need to implement funny quotes getter
+
+# Source of general technique and inspiration
+# http://www.irongeek.com/i.php?page=security/networkprinterhacking
+
+# TODO need to implement funny quotes getter & network-printer detection
+
 lineWidth = 20
 maxChars = 80
 HOST = "130.225.24.203"
