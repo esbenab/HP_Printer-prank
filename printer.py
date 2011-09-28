@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 #TODO need to implement funny quotes getter
 lineWidth = 20
 maxChars = 80
