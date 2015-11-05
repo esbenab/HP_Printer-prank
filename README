@@ -1,9 +1,0 @@
-Usage: python printer.py "funny quote"
-
-==configuration==
-1. open script in editor
-2. adjust lineWidth variable to correct value
-3. adjust maxChars variable to correct value
-4. adjust HOST variable to printer ip.
-5. ...
-6. profit
