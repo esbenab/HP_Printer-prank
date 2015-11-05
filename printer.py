@@ -16,7 +16,7 @@ PORT = 9100
 text = ''
 
 
-helptext='test.py -l <lineWidth> -m <maxChars> -H <Host> -p <port> -t <TextToSend [needed]>'
+helptext='printer.py -l <lineWidth> -m <maxChars> -H <Host> -p <port> -t <TextToSend [needed]>'
 
 print "Hi!"
 

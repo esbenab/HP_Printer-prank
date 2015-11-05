@@ -1,9 +1,13 @@
-Usage: python printer.py "funny quote"
+#HP Printer Prank
 
-==configuration==
-1. open script in editor
-2. adjust lineWidth variable to correct value
-3. adjust maxChars variable to correct value
-4. adjust HOST variable to printer ip.
-5. ...
-6. profit
+##Usage:
+**Normal Options**
+You need to pass only Ip addred and text:
+
+```
+printer.py -H <Host [needed]> -t <TextToSend [needed]>
+
+**Others Options:**
+```
+printer.py -l <lineWidth> -m <maxChars> -H <Host [needed]> -p <port> -t <TextToSend [needed]>
+
