@@ -38,7 +38,7 @@ for opt, arg in opts:
    elif opt == '-p':
       PORT = arg
    elif opt == '-t':
-      text = arg
+      text = str.rsplit(arg)
 
 
 if(text==''):
