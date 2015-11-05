@@ -5,19 +5,50 @@
 
 # TODO need to implement funny quotes getter & network-printer detection
 
+import sys
+import socket
+import getopt
+
 lineWidth = 20
 maxChars = 80
 HOST = "130.225.24.203"
 PORT = 9100
 text = ''
-import sys
-import socket
-#import 
+
+
+helptext='test.py -l <lineWidth> -m <maxChars> -H <Host> -p <port> -t <TextToSend [needed]>'
+
+print "Hi!"
+
 try:
-        text = str.rsplit(sys.argv[1])
-except:
-        print "Usage: "+sys.argv[0]+" <your whitty quote>"
-        raise SystemExit
+   opts, args = getopt.getopt(sys.argv[1:],"hl:m:H:p:t:")
+except getopt.GetoptError:
+   print helptext
+   sys.exit(2)
+for opt, arg in opts:
+   if opt == '-h':
+      print helptext
+      sys.exit()
+   elif opt == '-l':
+      lineWidth = arg
+   elif opt == '-m':
+      maxChars = arg
+   elif opt == '-H':
+      HOST = arg
+   elif opt == '-p':
+      PORT = arg
+   elif opt == '-t':
+      text = arg
+
+
+if(text==''):
+	print helptext
+	sys.exit()
+
+print "Let's Go!"
+
+print HOST
+print PORT
 
 def format(textToFormat):
         lineUse = 0
